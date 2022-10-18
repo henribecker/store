@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #223649;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(20, 30, 51);
+    flex-wrap: wrap;
+}
+
+.topbar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar .logo {
+    display: flex;
+    max-width: 150px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.topbar .logo span {
+    margin-left: 5px;
+}
+
+.topbar .menu {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    color: #ffffff;
+}
+
+.topbar .menu .search {
+    position: relative;
+    display: flex;
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+    align-items: center
+}
+
+.topbar .menu .search input {
+
+    display: flex;
+    width: 50%;
+    height: 70%;
+    padding: 0 40px 0 20px;
+    border-radius: 10px;
+    background-color: #48749c;
+    outline: none;
+    border: none;
+}
+
+.topbar .menu .search a {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 26%;
+    top: 26%;
+    text-decoration: none;
+}
+
+.topbar .menu .conta {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar .menu .conta a {
+    display: flex;
+    width: 50%;
+    height: 75%;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #355675;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    transition: 100ms ease-in-out;
+    margin-left: 3px;
+}
+
+.topbar .menu .conta a:hover {
+    background-color: #48749c;
+    letter-spacing: 1.3px;
+    transition: 100ms ease-in-out;
+}
+
+.submenu {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 0 300px;
+    background-color: rgb(20, 30, 51);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+.submenu .menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.submenu .menu .menus {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+}
+
+.submenu .menu .menus ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+
+}
+
+.submenu .menu .menus ul li {
+    width: 20%;
+    height: 100%;
+    list-style: none;
+    transition: all 400ms ease-in-out;
+}
+
+.submenu .menu .menus ul li a {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.submenu .menu .menus ul li:hover {
+    transform: translateY(-7px);
+    letter-spacing: 1.3px;
+    border-bottom: 1px solid #ffffff;
+    transition: all 400ms ease-in-out;
+}
+
+.submenu .menu .conta {
+    display: flex;
+    width: 30%;
+    height: 100%;
+}
+
+.submenu .menu .conta a {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #0568c5;
+    margin: 5px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 400ms ease-in-out;
+}
+
+.submenu .menu .conta a img {
+    display: flex;
+    width: 26px;
+    height: 26px;
+
+}
+
+.submenu .menu .conta a:hover {
+    transform: rotate(360deg);
+    transform: scale(1.5);
+    transition: 400ms ease-in-out;
+}
+
+.submenu .menu .conta a img:hover {
+    transform: rotate(360deg);
+    transition: 700ms ease-in-out;
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .container {
+        padding: 0 20px;
+        transition: 10 ease-in-out;
+
+    }
+}
