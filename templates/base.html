@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=" {% static 'base/css/style.css' %} ">
+    <link rel="stylesheet" href=" {% static 'base/css/slide_base.css' %} ">
     <link rel="shortcut icon" href=" {% static 'base/favicon.ico' %} " type="image/x-icon">
     <title>Base</title>
 </head>
@@ -48,7 +49,37 @@
         </div>
     </section>
     <div class="container">
-        
+        <div class="slider">
+            <div class="baners">
+                <input type="radio" id="baner1" name="baner" >
+                <input type="radio" id="baner2" name="baner">
+                <input type="radio" id="baner3" name="baner">
+
+                <div class="baner first">
+                    <img src=" {% static 'base/img/baner_burguer.jpg' %} " alt="">
+                </div>
+                <div class="baner">
+                    <img src=" {% static 'base/img/baner2.jpg' %} " alt="">
+                </div>
+                <div class="baner">
+                    <img src=" {% static 'base/img/baner3.jpg' %} " alt="">
+                </div>
+
+                <div class="nave-auto">
+                    <div class="btn1"></div>
+                    <div class="btn2"></div>
+                    <div class="btn3"></div>
+                </div>
+            </div>
+
+            <div class="manual-navi">
+                <label for="baner1" class="manual-btn"></label>
+                <label for="baner2" class="manual-btn"></label>
+                <label for="baner3" class="manual-btn"></label>
+            </div>
+
+        </div>
     </div>
+    <script src=" {% static 'base/js/slide.js' %} "></script>
 </body>
 </html>
